@@ -6,7 +6,6 @@ module.exports = function (grunt) {
 
     grunt.initConfig({
         pkg: grunt.file.readJSON('package.json'),
-
         sass: {
             style: {
                 files: [
@@ -16,7 +15,6 @@ module.exports = function (grunt) {
                 ]
             }
         },
-
         postcss: {
             prefix: {
                 options: {
@@ -32,7 +30,6 @@ module.exports = function (grunt) {
                     }
                 ]
             },
-
             min: {
                 options: {
                     processors: [
@@ -48,7 +45,6 @@ module.exports = function (grunt) {
 
             }
         },
-
         cmq: {
             options: {
                 log: false
@@ -61,7 +57,6 @@ module.exports = function (grunt) {
                 ]
             }
         },
-
         concat: {
             options: {
                 separator: '\n'
@@ -72,14 +67,12 @@ module.exports = function (grunt) {
                 }
             }
         },
-
         uglify: {
             build: {
                 src: 'dist/js/built.js',
                 dest: 'dist/js/built.min.js'
             }
         },
-
         imagemin: {
             dynamic: {
                 files: [{
@@ -90,11 +83,10 @@ module.exports = function (grunt) {
                 }]
             }
         },
-
         watch: {
             css: {
                 files: ['styles/*.scss'],
-                tasks: ['style', 'postcss'],
+                tasks: ['style'],
                 options: {
                     livereload: true,
                     spawn: false,
@@ -103,43 +95,38 @@ module.exports = function (grunt) {
             },
             scripts: {
                 files: ['js/*.js'],
-                tasks: ['concat', 'uglify'],
+                tasks: ['scripts'],
                 options: {
-                    livereload: false,
+                    livereload: true,
                     spawn: false
                 }
             }
         },
-
         connect: {
             server: {
                 options: {
                     port: 8080,
-                    base: '',
+                    base: 'dist',
                     keepalive: true,
-                    livereload: false
+                    livereload: true,
+                    open: true,
+                    hostname: 'localhost'
                 }
             }
         }
     });
-
     require('load-grunt-tasks')(grunt, {scope: 'devDependencies'});
-
     grunt.registerTask('default', [
         'style', 'scripts'
     ]);
-
     grunt.registerTask('style', [
         'sass:style',
         'postcss:prefix',
         'cmq',
         'postcss:min'
     ]);
-
     grunt.registerTask('scripts', ['concat', 'uglify']);
-
     grunt.registerTask('server', function () {
         return grunt.task.run(['connect:server'])
     });
-
 };
