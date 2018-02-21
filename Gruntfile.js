@@ -84,28 +84,33 @@ module.exports = function (grunt) {
             }
         },
         watch: {
+            html: {
+                files: ['dist/*.html'],
+                options: {
+                    livereload: true,
+                    spawn: false
+                }
+            },
             css: {
                 files: ['styles/*.scss'],
                 tasks: ['style'],
                 options: {
                     livereload: true,
-                    spawn: false,
-                    reload: true
-                }
-            },
-            scripts: {
-                files: ['js/*.js'],
-                tasks: ['scripts'],
-                options: {
-                    livereload: true,
                     spawn: false
                 }
-            }
+            }/*,
+            scripts: {
+                files: ['js/!*.js'],
+                tasks: ['scripts'],
+                options: {
+                    spawn: false
+                }
+            }*/
         },
         connect: {
             server: {
                 options: {
-                    port: 8080,
+                    port: 3000,
                     base: 'dist',
                     keepalive: true,
                     livereload: true,

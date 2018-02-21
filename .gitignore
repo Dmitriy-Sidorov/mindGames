@@ -1,4 +1,5 @@
 .idea/
 .sass-cache/
-node_modules/
-layout/
+/node_modules/
+/layout/
+/fonts/

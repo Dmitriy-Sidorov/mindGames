@@ -2,7 +2,10 @@
 <html lang="ru">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Мастер класс «Игры разума»</title>
     <link rel="stylesheet"
           href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css"
           integrity="sha384-OHBBOqpYHNsIqQy8hL1U+8OXf9hH6QRxi0+EODezv82DfnZoV7qoHAZDwMwEJvSw"
@@ -11,15 +14,52 @@
 </head>
 <body>
 
-<i class="fab fa-accessible-icon"></i>
+<header>
+    <div class="container">
+        <div class="contactData">
+            <div class="contactData__logotype">
+                <div class="contactData__logo">
+                    <img src="img/header-logo.png" alt="Институт инновационной психологии" class="img-responsive">
+                </div>
+            </div>
+            <div class="contactData__details">
+                <span class="contactData__place"><img src="img/header-place.png" alt="">Ривьера, зал «Адмиральский»</span>
+                <span class="contactData__date"><img src="img/header-date.png" alt="">27 сентября в 19<sup>00</sup></span>
+            </div>
+            <div class="contactData__tel">
+                <a href="tel:+77885252214">+7 (788) <span>5252-214</span></a>
+                <a href="tel:+79855252214">+7 (985) <span>5252-214</span></a>
+            </div>
+        </div>
+    </div>
+</header>
 
-<h1>Hello World</h1>
+<!--modal-->
+<div class="modal fade" id="modal" tabindex="-1" role="dialog"
+     aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+            </div>
+            <div class="modal-body">
+                <div class="row">
 
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 <script src="js/libs/bootstrap.bundle.min.js"></script>
 <script src="js/libs/fontawesome-all.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"
         integrity="sha256-z6FznuNG1jo9PP3/jBjL6P3tvLMtSwiVAowZPOgo56U="
         crossorigin="anonymous"></script>
 <script src="js/built.js"></script>
+<script>
+    new WOW().init();
+</script>
 </body>
 </html>

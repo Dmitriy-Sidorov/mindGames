@@ -1,6 +1,24 @@
+//fonts
+@import "fonts";
+
+//font awesome
+@import "../layout/fontawesome-free-5.0.6/web-fonts-with-css/scss/variables";
+@import "../layout/fontawesome-free-5.0.6/web-fonts-with-css/scss/mixins";
+@import "../layout/fontawesome-free-5.0.6/web-fonts-with-css/scss/core";
+@import "../layout/fontawesome-free-5.0.6/web-fonts-with-css/scss/larger";
+@import "../layout/fontawesome-free-5.0.6/web-fonts-with-css/scss/fixed-width";
+@import "../layout/fontawesome-free-5.0.6/web-fonts-with-css/scss/list";
+@import "../layout/fontawesome-free-5.0.6/web-fonts-with-css/scss/bordered-pulled";
+@import "../layout/fontawesome-free-5.0.6/web-fonts-with-css/scss/animated";
+@import "../layout/fontawesome-free-5.0.6/web-fonts-with-css/scss/rotated-flipped";
+@import "../layout/fontawesome-free-5.0.6/web-fonts-with-css/scss/stacked";
+@import "../layout/fontawesome-free-5.0.6/web-fonts-with-css/scss/icons";
+@import "../layout/fontawesome-free-5.0.6/web-fonts-with-css/scss/screen-reader";
+
 //bootstrap
 @import "../node_modules/bootstrap/scss/functions";
-@import "../node_modules/bootstrap/scss/variables";
+//@import "../node_modules/bootstrap/scss/variables";
+  @import "core/variables";
 @import "../node_modules/bootstrap/scss/mixins";
 @import "../node_modules/bootstrap/scss/root";
 @import "../node_modules/bootstrap/scss/reboot";
@@ -35,18 +53,7 @@
 @import "../node_modules/bootstrap/scss/utilities";
 @import "../node_modules/bootstrap/scss/print";
 
-//font awesome
-@import "../layout/fontawesome-free-5.0.6/web-fonts-with-css/scss/variables";
-@import "../layout/fontawesome-free-5.0.6/web-fonts-with-css/scss/mixins";
-@import "../layout/fontawesome-free-5.0.6/web-fonts-with-css/scss/core";
-@import "../layout/fontawesome-free-5.0.6/web-fonts-with-css/scss/larger";
-@import "../layout/fontawesome-free-5.0.6/web-fonts-with-css/scss/fixed-width";
-@import "../layout/fontawesome-free-5.0.6/web-fonts-with-css/scss/list";
-@import "../layout/fontawesome-free-5.0.6/web-fonts-with-css/scss/bordered-pulled";
-@import "../layout/fontawesome-free-5.0.6/web-fonts-with-css/scss/animated";
-@import "../layout/fontawesome-free-5.0.6/web-fonts-with-css/scss/rotated-flipped";
-@import "../layout/fontawesome-free-5.0.6/web-fonts-with-css/scss/stacked";
-@import "../layout/fontawesome-free-5.0.6/web-fonts-with-css/scss/icons";
-@import "../layout/fontawesome-free-5.0.6/web-fonts-with-css/scss/screen-reader";
-
+//custom
+@import "variables";
+@import "mixins";
 @import "custom";

@@ -1,0 +1,52 @@
+body, html {
+  overflow-x: hidden;
+  @include font-base;
+}
+
+header {
+  background: white;
+  padding-top: 34px;
+  padding-bottom: 34px;
+}
+
+.contactData {
+  @include make-row();
+  align-items: center;
+  justify-content: space-between;
+  margin: 0;
+
+  &__logotype {
+  }
+  &__logo {
+
+  }
+  &__details {
+    text-align: right;
+  }
+  &__place, &__date {
+    img {
+      margin-right: 10px;
+    }
+  }
+  &__place {
+    padding-right: 25px;
+  }
+  &__date {
+
+  }
+  &__tel {
+    text-align: right;
+
+    a {
+      font-size: 25px;
+      font-family: 'P22UndergroundCYProDemi', sans-serif;
+      color: $light-black;
+      &:first-child {
+        padding-right: 25px;
+      }
+      span{
+        color: $dark-blue;
+      }
+    }
+  }
+}
