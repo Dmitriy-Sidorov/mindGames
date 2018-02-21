@@ -1,0 +1,9 @@
+@font-face {
+    font-family: 'P22UndergroundCYProMedium';
+    src: url('fonts/P22UndergroundCYProMedium.eot');
+    src: url('fonts/P22UndergroundCYProMedium.eot') format('embedded-opentype'),
+         url('fonts/P22UndergroundCYProMedium.woff2') format('woff2'),
+         url('fonts/P22UndergroundCYProMedium.woff') format('woff'),
+         url('fonts/P22UndergroundCYProMedium.ttf') format('truetype'),
+         url('fonts/P22UndergroundCYProMedium.svg#P22UndergroundCYProMedium') format('svg');
+}
