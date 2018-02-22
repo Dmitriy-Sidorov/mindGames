@@ -3,3 +3,7 @@
   color: $light-black;
   font-size: 14px;
 }
+
+@mixin input-icon($url) {
+  background: $url left top 5% no-repeat;
+}

@@ -3,6 +3,14 @@ body, html {
   @include font-base;
 }
 
+button, input {
+  &:focus {
+    outline: none;
+  }
+}
+
+/*----------top header------------*/
+
 header {
   background: white;
   padding-top: 34px;
@@ -44,9 +52,172 @@ header {
       &:first-child {
         padding-right: 25px;
       }
-      span{
+      span {
         color: $dark-blue;
       }
     }
   }
 }
+
+/*--------main screen------------*/
+
+main {
+  background: #fdfdfd url(../img/main-background.png) top 54.4% right 46.5% no-repeat;
+  padding-top: 75px;
+  padding-bottom: 75px;
+}
+
+.mainScreen {
+  @include make-col-ready;
+  @include media-breakpoint-up(md) {
+    @include make-col(8);
+  }
+  &__subtitle {
+    font-size: 25px;
+    font-family: "P22UndergroundCYProThin", sans-serif;
+    text-transform: uppercase;
+    margin-left: -2px;
+  }
+  &__h1 {
+    font-family: 'P22UndergroundCYProHeavy', sans-serif;
+    font-size: 70px;
+    color: $dark-blue;
+    text-transform: uppercase;
+    margin-bottom: 70px;
+    margin-top: -2px;
+    margin-left: -4px;
+  }
+  &__list {
+    font-size: 17px;
+    padding-left: 0;
+    line-height: 34px;
+    list-style: none;
+
+    li {
+      background: url(../img/check-mark.png) left center no-repeat;
+      padding-left: 34px;
+    }
+  }
+}
+
+.verticalForm {
+  @include make-col-ready;
+  @include media-breakpoint-up(md) {
+    @include make-col(4);
+  }
+  &__wrapper {
+    background: $form-grey;
+    padding: 40px;
+    border-top: 5px $dark-blue solid;
+  }
+  &__paragraph {
+    font-family: 'P22UndergroundCYProMedium', sans-serif;
+    font-size: 20px;
+    line-height: 20px;
+    margin-bottom: 32px;
+    margin-top: -1px;
+  }
+  &__input {
+    width: 100%;
+    background: transparent;
+    border: none;
+    border-radius: 0;
+    border-bottom: 1px $light-black solid;
+    margin-bottom: 27px;
+    font-size: 16px;
+    line-height: 1;
+    padding: 0;
+    padding-bottom: 5px;
+    padding-left: 20px;
+    opacity: 0.25;
+
+    &:hover {
+      opacity: 1;
+      &::placeholder {
+        color: $light-black;
+        opacity: 0.25;
+      }
+    }
+    &:focus {
+      opacity: 1;
+    }
+    &-name {
+      @include input-icon(url("../img/input-name.png"));
+    }
+    &-phone {
+      @include input-icon(url("../img/input-phone.png"));
+    }
+    &-email {
+      @include input-icon(url("../img/input-email.png"));
+    }
+  }
+  &__footnote {
+    margin-top: -1px;
+    margin-bottom: 1px;
+    span {
+      font-family: 'P22UndergroundCYProHeavy', sans-serif;
+      font-size: 20px;
+      color: $dark-blue;
+    }
+  }
+  &__endnote {
+    font-size: 12px;
+    font-family: 'P22UndergroundCYProThin', sans-serif;
+    color: $light-black;
+  }
+  &__btn {
+    background: $color-button;
+    color: #fff;
+    box-shadow: 0 0 8px 0 rgba(0, 16, 27, 0.2);
+    font-size: 16px;
+    width: 100%;
+    height: 70px;
+    border-radius: 50px;
+    margin-top: 35px;
+  }
+}
+
+/*--------section — for whom------------*/
+
+.forWhom {
+  @include make-row;
+
+  &__h2 {
+    @include make-col-ready;
+    @include media-breakpoint-up(xs) {
+      @include make-col(12)
+    }
+  }
+  &__col {
+    @include make-col-ready;
+    @include media-breakpoint-up(md) {
+      @include make-col(4);
+    }
+    @include media-breakpoint-down(xs) {
+      flex-wrap: wrap;
+      flex-direction: row;
+      justify-content: center;
+    }
+    @include media-breakpoint-down(sm) {
+      flex-wrap: nowrap;
+      flex-direction: row;
+      justify-content: center;
+    }
+    @include media-breakpoint-down(lg) {
+      flex-wrap: nowrap;
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: center;
+    }
+    display: flex;
+    flex-direction: row;
+  }
+  &__img {
+    width: 80px;
+    height: 80px;
+  }
+}
+
+
+
+
