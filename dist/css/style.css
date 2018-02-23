@@ -9628,6 +9628,22 @@ input:focus {
 	outline: none;
 }
 
+h2 {
+	font-size: 30px;
+	font-family: 'P22UndergroundCYProMedium', sans-serif;
+	line-height: 1;
+	text-align: center;
+	margin-bottom: 92px;
+}
+
+h3 {
+	font-size: 20px;
+	font-family: 'P22UndergroundCYProHeavy', sans-serif;
+	line-height: 1;
+	margin-bottom: 27px;
+	color: #125e94;
+}
+
 /*----------top header------------*/
 
 header {
