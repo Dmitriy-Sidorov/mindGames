@@ -29,6 +29,82 @@ h3 {
   color: $dark-blue;
 }
 
+/*--------------forms--------------*/
+
+.verticalForm {
+  @include make-col-ready;
+  @include media-breakpoint-up(md) {
+    @include make-col(4);
+  }
+  &__wrapper {
+    background: $form-grey;
+    padding: 40px;
+    border-top: 5px $dark-blue solid;
+  }
+  &__paragraph {
+    @include name-form();
+    margin-bottom: 32px;
+    margin-top: -1px;
+  }
+  &__form {
+    display: flex;
+    flex-direction: column;
+  }
+  &__input {
+    @include input();
+    margin-bottom: 27px;
+  }
+  &__footnote {
+    margin-top: -1px;
+    margin-bottom: 1px;
+    span {
+      font-family: 'P22UndergroundCYProHeavy', sans-serif;
+      font-size: 20px;
+      color: $dark-blue;
+    }
+  }
+  &__endnote {
+    font-size: 12px;
+    font-family: 'P22UndergroundCYProThin', sans-serif;
+    color: $light-black;
+  }
+  &__btn {
+    @include form-button();
+    margin-top: 35px;
+  }
+}
+
+.horizontalForm {
+  text-align: left;
+  margin-bottom: 93px;
+  @include make-col-ready;
+  &__wrapper {
+    background: #fff;
+    padding: 50px;
+    padding-bottom: 32px;
+  }
+  &__paragraph {
+    @include name-form();
+    margin-bottom: 32px;
+    margin-top: -1px;
+  }
+  &__form {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
+  &__input {
+    @include input();
+    margin-right: 20px;
+  }
+  &__btn {
+    @include form-button();
+    width: 250px;
+  }
+}
+
+
 /*----------top header------------*/
 
 header {
@@ -117,43 +193,6 @@ main {
       background: url(../img/check-mark.png) left center no-repeat;
       padding-left: 34px;
     }
-  }
-}
-
-.verticalForm {
-  @include make-col-ready;
-  @include media-breakpoint-up(md) {
-    @include make-col(4);
-  }
-  &__wrapper {
-    background: $form-grey;
-    padding: 40px;
-    border-top: 5px $dark-blue solid;
-  }
-  &__paragraph {
-    @include name-form();
-    margin-bottom: 32px;
-    margin-top: -1px;
-  }
-  &__input {
-    @include input();
-  }
-  &__footnote {
-    margin-top: -1px;
-    margin-bottom: 1px;
-    span {
-      font-family: 'P22UndergroundCYProHeavy', sans-serif;
-      font-size: 20px;
-      color: $dark-blue;
-    }
-  }
-  &__endnote {
-    font-size: 12px;
-    font-family: 'P22UndergroundCYProThin', sans-serif;
-    color: $light-black;
-  }
-  &__btn {
-    @include form-button();
   }
 }
 
@@ -274,3 +313,4 @@ main {
     @include make-col(12);
   }
 }
+
