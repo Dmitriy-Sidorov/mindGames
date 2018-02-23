@@ -185,6 +185,56 @@
     </div>
 </section>
 
+<section class="sectionTwo">
+    <div class="container">
+        <div class="static row">
+            <h2 class="col-12">Что вы унаете на мастер-классе</h2>
+            <div class="col-md-4">
+                <div
+                        class="circle"
+                        data-value="0.33333"
+                        data-size="100"
+                        data-thickness="10"
+                        data-animation-start-value="1.0"
+                        data-fill="{
+                            &quot;image&quot;: &quot;http://i.imgur.com/pT0i89v.png&quot;
+                        }"
+                ></div>
+                <h3>История</h3>
+                <p>Вы услышите истории людей которые решили ...</p>
+            </div>
+            <div class="col-md-4">
+                <div
+                        class="circle"
+                        data-value="0.66666"
+                        data-size="100"
+                        data-thickness="10"
+                        data-animation-start-value="1.0"
+                        data-fill="{
+                            &quot;image&quot;: &quot;http://i.imgur.com/pT0i89v.png&quot;
+                        }"
+                ></div>
+                <h3>Опыт</h3>
+                <p>Приобретите новый опыт и видение своей ...</p>
+            </div>
+            <div class="col-md-4">
+                <div
+                        class="circle"
+                        data-value="1"
+                        data-size="100"
+                        data-thickness="10"
+                        data-animation-start-value="1.0"
+                        data-fill="{
+                            &quot;image&quot;: &quot;http://i.imgur.com/pT0i89v.png&quot;
+                        }"
+                ></div>
+                <h3>Инструмент Puzzle</h3>
+                <p>Узнайте о высокоэффективном инструменте ...</p>
+            </div>
+        </div>
+    </div>
+</section>
+
 <!--modal-->
 <div class="modal fade" id="modal" tabindex="-1" role="dialog"
      aria-labelledby="myModalLabel" aria-hidden="true">
@@ -208,9 +258,20 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"
         integrity="sha256-z6FznuNG1jo9PP3/jBjL6P3tvLMtSwiVAowZPOgo56U="
         crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-circle-progress/1.2.2/circle-progress.min.js"
+        integrity="sha256-2XpjfLL5tRYLa3AAM0gz6aAY0zxvHogDzTWemxkTPDg="
+        crossorigin="anonymous"></script>
 <script src="js/built.js"></script>
 <script>
     new WOW().init();
+</script>
+<script>
+    $('.circle').circleProgress({
+        startAngle: -0.5 * Math.PI,
+        fill: {
+            color: "#ffffff"
+        }
+    });
 </script>
 </body>
 </html>
