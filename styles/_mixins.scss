@@ -8,3 +8,57 @@
   background: $url left top 5% no-repeat;
 }
 
+@mixin name-form() {
+  font-family: 'P22UndergroundCYProMedium', sans-serif;
+  font-size: 20px;
+  line-height: 20px;
+}
+
+@mixin input() {
+  width: 100%;
+  background: transparent;
+  border: none;
+  border-radius: 0;
+  border-bottom: 1px $light-black solid;
+  margin-bottom: 27px;
+  font-size: 16px;
+  line-height: 1;
+  padding: 0;
+  padding-bottom: 5px;
+  padding-left: 20px;
+  opacity: 0.25;
+
+  &:hover {
+    opacity: 1;
+    &::placeholder {
+      color: $light-black;
+      opacity: 0.25;
+    }
+  }
+  &:focus {
+    opacity: 1;
+    &::placeholder {
+      opacity: 0;
+    }
+  }
+  &-name {
+    @include input-icon(url("../img/input-name.png"));
+  }
+  &-phone {
+    @include input-icon(url("../img/input-phone.png"));
+  }
+  &-email {
+    @include input-icon(url("../img/input-email.png"));
+  }
+}
+
+@mixin button() {
+  background: $color-button;
+  color: $text-white;
+  box-shadow: 0 0 8px 0 rgba(0, 16, 27, 0.2);
+  font-size: 16px;
+  width: 100%;
+  height: 70px;
+  border-radius: 50px;
+  margin-top: 35px;
+}
