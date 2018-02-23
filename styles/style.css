@@ -10489,7 +10489,7 @@ main {
   color: #fff;
   padding-top: 100px; }
 
-.learn {
+.learn, .benefit {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -10497,19 +10497,19 @@ main {
       flex-wrap: wrap;
   margin-right: -10px;
   margin-left: -10px; }
-  .learn__item {
+  .learn__item, .benefit__item {
     position: relative;
     width: 100%;
     min-height: 1px;
     padding-right: 10px;
     padding-left: 10px; }
     @media (min-width: 768px) {
-      .learn__item {
+      .learn__item, .benefit__item {
         -webkit-box-flex: 0;
             -ms-flex: 0 0 33.3333333333%;
                 flex: 0 0 33.3333333333%;
         max-width: 33.3333333333%; } }
-  .learn__circle {
+  .learn__circle, .benefit__circle {
     font-size: 65px;
     font-family: 'P22UndergroundCYProHeavy', sans-serif;
     line-height: 1;
@@ -10524,26 +10524,16 @@ main {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center; }
-  .learn__number {
+  .learn__number, .benefit__number {
     position: absolute;
     padding-top: 12px; }
-  .learn__h3 {
+  .learn__icon, .benefit__icon {
+    margin-bottom: 40px; }
+  .learn__h3, .benefit__h3 {
     color: #fff;
     margin-bottom: 32px; }
-  .learn__paragraph {
+  .learn__paragraph, .benefit__paragraph {
     font-size: 15px;
     line-height: 17px;
     padding: 0 60px;
     margin-bottom: 50px; }
-
-.horizontalForm {
-  background: #fff;
-  position: relative;
-  width: 100%;
-  min-height: 1px;
-  padding-right: 10px;
-  padding-left: 10px;
-  -webkit-box-flex: 0;
-      -ms-flex: 0 0 100%;
-          flex: 0 0 100%;
-  max-width: 100%; }

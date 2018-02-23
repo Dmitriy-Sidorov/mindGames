@@ -271,8 +271,8 @@ main {
   padding-top: 100px;
 }
 
-.learn {
-  @include make-row;
+.learn, .benefit {
+  @include make-row();
 
   &__item {
     @include make-col-ready;
@@ -294,6 +294,9 @@ main {
     position: absolute;
     padding-top: 12px;
   }
+  &__icon {
+    margin-bottom: 40px;
+  }
   &__h3 {
     color: $text-white;
     margin-bottom: 32px;
@@ -303,14 +306,6 @@ main {
     line-height: 17px;
     padding: 0 60px;
     margin-bottom: 50px;
-  }
-}
-
-.horizontalForm {
-  background: #fff;
-  @include make-col-ready;
-  @include media-breakpoint-up(xs) {
-    @include make-col(12);
   }
 }
 
