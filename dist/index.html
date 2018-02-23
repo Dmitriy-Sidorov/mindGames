@@ -81,7 +81,7 @@
 <section class="sectionOne">
     <div class="container">
         <div class="forWhom">
-            <h2 class="forWhom__h2">Вам будет полезен мастер-класс, если:</h2>
+            <h2>Вам будет полезен мастер-класс, если:</h2>
 
             <div class="forWhom__col forWhom__col-money">
                 <img class="forWhom__img" src="img/icon-money.png" alt="">
@@ -187,49 +187,48 @@
 
 <section class="sectionTwo">
     <div class="container">
-        <div class="static row">
-            <h2 class="col-12">Что вы унаете на мастер-классе</h2>
-            <div class="col-md-4">
-                <div
-                        class="circle"
-                        data-value="0.33333"
-                        data-size="100"
-                        data-thickness="10"
-                        data-animation-start-value="1.0"
-                        data-fill="{
-                            &quot;image&quot;: &quot;http://i.imgur.com/pT0i89v.png&quot;
-                        }"
-                ></div>
-                <h3>История</h3>
-                <p>Вы услышите истории людей которые решили ...</p>
+        <div class="learn">
+            <h2>Что вы унаете на мастер-классе</h2>
+            <div class="learn__item">
+                <div class="learn__circle" data-value="0.33333">
+                    <div class="learn__number">1</div>
+                </div>
+                <h3 class="learn__h3">История</h3>
+                <p class="learn__paragraph">Вы услышите истории людей которые решили ...</p>
             </div>
-            <div class="col-md-4">
-                <div
-                        class="circle"
-                        data-value="0.66666"
-                        data-size="100"
-                        data-thickness="10"
-                        data-animation-start-value="1.0"
-                        data-fill="{
-                            &quot;image&quot;: &quot;http://i.imgur.com/pT0i89v.png&quot;
-                        }"
-                ></div>
-                <h3>Опыт</h3>
-                <p>Приобретите новый опыт и видение своей ...</p>
+            <div class="learn__item">
+                <div class="learn__circle" data-value="0.66666">
+                    <div class="learn__number">2</div>
+                </div>
+                <h3 class="learn__h3">Опыт</h3>
+                <p class="learn__paragraph">Приобретите новый опыт и видение своей ...</p>
             </div>
-            <div class="col-md-4">
-                <div
-                        class="circle"
-                        data-value="1"
-                        data-size="100"
-                        data-thickness="10"
-                        data-animation-start-value="1.0"
-                        data-fill="{
-                            &quot;image&quot;: &quot;http://i.imgur.com/pT0i89v.png&quot;
-                        }"
-                ></div>
-                <h3>Инструмент Puzzle</h3>
-                <p>Узнайте о высокоэффективном инструменте ...</p>
+            <div class="learn__item">
+                <div class="learn__circle" data-value="1">
+                    <div class="learn__number">3</div>
+                </div>
+                <h3 class="learn__h3">Инструмент Puzzle</h3>
+                <p class="learn__paragraph">Узнайте о высокоэффективном инструменте ...</p>
+            </div>
+        </div>
+        <div class="horizontalForm">
+            <div class="horizontalForm__wrapper">
+                <p class="horizontalForm__paragraph">Зарегестрируйтесь на мастер-класс «Игры разума» прямо сейчас!</p>
+                <form action="#">
+                    <input class="horizontalForm__input horizontalForm__input-name" type="text" placeholder="Имя*"
+                           required="required">
+                    <input class="horizontalForm__input  horizontalForm__input-phone" type="tel"
+                           placeholder="Телефон* (лучше сразу с проверкой)"
+                           required="required">
+                    <input class="horizontalForm__input  horizontalForm__input-email" type="email"
+                           placeholder="E-mail* (лучше сразу с проверкой)"
+                           required="required">
+                    <input type="text" hidden placeholder="Главная форма">
+                    <p class="horizontalForm__footnote">цена участия в мастер-классе 
+                        <span class="horizontalForm__price">300 руб.</span></p>
+                    <small class="horizontalForm__endnote">*количество мест ограниченно</small>
+                    <input class="horizontalForm__btn btn" type="submit" value="Отправить заявку">
+                </form>
             </div>
         </div>
     </div>
@@ -264,14 +263,6 @@
 <script src="js/built.js"></script>
 <script>
     new WOW().init();
-</script>
-<script>
-    $('.circle').circleProgress({
-        startAngle: -0.5 * Math.PI,
-        fill: {
-            color: "#ffffff"
-        }
-    });
 </script>
 </body>
 </html>

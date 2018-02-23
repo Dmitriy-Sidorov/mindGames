@@ -98,22 +98,23 @@ module.exports = function (grunt) {
                     livereload: true,
                     spawn: false
                 }
-            }/*,
+            },
             scripts: {
-                files: ['js/!*.js'],
-                tasks: ['scripts'],
+                files: ['js/*.js'],
+                tasks: ['concat', 'uglify'],
                 options: {
+                    livereload: true,
                     spawn: false
                 }
-            }*/
+            }
         },
         connect: {
             server: {
                 options: {
-                    port: 3000,
+                    port: 8080,
                     base: 'dist',
                     keepalive: true,
-                    livereload: true,
+                    livereload: false,
                     open: true,
                     hostname: 'localhost'
                 }

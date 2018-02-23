@@ -9634,6 +9634,15 @@ h2 {
 	line-height: 1;
 	text-align: center;
 	margin-bottom: 92px;
+	position: relative;
+	width: 100%;
+	min-height: 1px;
+	padding-right: 10px;
+	padding-left: 10px;
+	-webkit-box-flex: 0;
+	-ms-flex: 0 0 100%;
+	flex: 0 0 100%;
+	max-width: 100%;
 }
 
 h3 {
@@ -9810,6 +9819,22 @@ main {
 	opacity: 1;
 }
 
+.verticalForm__input:focus::-webkit-input-placeholder {
+	opacity: 0;
+}
+
+.verticalForm__input:focus:-ms-input-placeholder {
+	opacity: 0;
+}
+
+.verticalForm__input:focus::-ms-input-placeholder {
+	opacity: 0;
+}
+
+.verticalForm__input:focus::placeholder {
+	opacity: 0;
+}
+
 .verticalForm__input-name {
 	background: url("../img/input-name.png") left top 5% no-repeat;
 }
@@ -9853,6 +9878,10 @@ main {
 
 /*--------section тАФ for whom------------*/
 
+.sectionOne {
+	padding-bottom: 57px;
+}
+
 .forWhom {
 	display: -webkit-box;
 	display: -ms-flexbox;
@@ -9861,18 +9890,6 @@ main {
 	flex-wrap: wrap;
 	margin-right: -10px;
 	margin-left: -10px;
-}
-
-.forWhom__h2 {
-	position: relative;
-	width: 100%;
-	min-height: 1px;
-	padding-right: 10px;
-	padding-left: 10px;
-	-webkit-box-flex: 0;
-	-ms-flex: 0 0 100%;
-	flex: 0 0 100%;
-	max-width: 100%;
 }
 
 .forWhom__col {
@@ -9905,6 +9922,67 @@ main {
 
 .forWhom__listing li {
 	margin-bottom: 7px;
+}
+
+/*------------section of learn------------------*/
+
+.sectionTwo {
+	background: #125e94;
+	text-align: center;
+	color: #fff;
+	padding-top: 100px;
+}
+
+.learn {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-ms-flex-wrap: wrap;
+	flex-wrap: wrap;
+	margin-right: -10px;
+	margin-left: -10px;
+}
+
+.learn__item {
+	position: relative;
+	width: 100%;
+	min-height: 1px;
+	padding-right: 10px;
+	padding-left: 10px;
+}
+
+.learn__circle {
+	font-size: 65px;
+	font-family: 'P22UndergroundCYProHeavy', sans-serif;
+	line-height: 1;
+	margin-bottom: 40px;
+	position: relative;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
+	align-items: center;
+	-webkit-box-pack: center;
+	-ms-flex-pack: center;
+	justify-content: center;
+}
+
+.learn__number {
+	position: absolute;
+	padding-top: 12px;
+}
+
+.learn__h3 {
+	color: #fff;
+	margin-bottom: 32px;
+}
+
+.learn__paragraph {
+	font-size: 15px;
+	line-height: 17px;
+	padding: 0 60px;
+	margin-bottom: 50px;
 }
 
 @media (min-width: 576px) {
@@ -11806,6 +11884,13 @@ main {
 }
 
 .forWhom__col {
+	-webkit-box-flex: 0;
+	-ms-flex: 0 0 33.3333333333%;
+	flex: 0 0 33.3333333333%;
+	max-width: 33.3333333333%;
+}
+
+.learn__item {
 	-webkit-box-flex: 0;
 	-ms-flex: 0 0 33.3333333333%;
 	flex: 0 0 33.3333333333%;

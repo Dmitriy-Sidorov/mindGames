@@ -131,45 +131,12 @@ main {
     border-top: 5px $dark-blue solid;
   }
   &__paragraph {
-    font-family: 'P22UndergroundCYProMedium', sans-serif;
-    font-size: 20px;
-    line-height: 20px;
+    @include name-form();
     margin-bottom: 32px;
     margin-top: -1px;
   }
   &__input {
-    width: 100%;
-    background: transparent;
-    border: none;
-    border-radius: 0;
-    border-bottom: 1px $light-black solid;
-    margin-bottom: 27px;
-    font-size: 16px;
-    line-height: 1;
-    padding: 0;
-    padding-bottom: 5px;
-    padding-left: 20px;
-    opacity: 0.25;
-
-    &:hover {
-      opacity: 1;
-      &::placeholder {
-        color: $light-black;
-        opacity: 0.25;
-      }
-    }
-    &:focus {
-      opacity: 1;
-    }
-    &-name {
-      @include input-icon(url("../img/input-name.png"));
-    }
-    &-phone {
-      @include input-icon(url("../img/input-phone.png"));
-    }
-    &-email {
-      @include input-icon(url("../img/input-email.png"));
-    }
+    @include input();
   }
   &__footnote {
     margin-top: -1px;
@@ -186,14 +153,7 @@ main {
     color: $light-black;
   }
   &__btn {
-    background: $color-button;
-    color: $text-white;
-    box-shadow: 0 0 8px 0 rgba(0, 16, 27, 0.2);
-    font-size: 16px;
-    width: 100%;
-    height: 70px;
-    border-radius: 50px;
-    margin-top: 35px;
+    @include button();
   }
 }
 
@@ -281,12 +241,29 @@ main {
       @include make-col(4);
     }
   }
+  &__circle {
+    font-size: 65px;
+    font-family: 'P22UndergroundCYProHeavy', sans-serif;
+    line-height: 1;
+    margin-bottom: 40px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  &__number{
+    position: absolute;
+    padding-top: 12px;
+  }
   &__h3 {
     color: $text-white;
+    margin-bottom: 32px;
   }
   &__paragraph {
     font-size: 15px;
     line-height: 17px;
     padding: 0 60px;
+    margin-bottom: 50px;
   }
 }
+
