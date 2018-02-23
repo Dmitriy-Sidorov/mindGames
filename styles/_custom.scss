@@ -153,7 +153,7 @@ main {
     color: $light-black;
   }
   &__btn {
-    @include button();
+    @include form-button();
   }
 }
 
@@ -267,3 +267,10 @@ main {
   }
 }
 
+.horizontalForm {
+  background: #fff;
+  @include make-col-ready;
+  @include media-breakpoint-up(xs) {
+    @include make-col(12);
+  }
+}
