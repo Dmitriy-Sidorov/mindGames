@@ -10487,7 +10487,8 @@ main {
   background: #125e94;
   text-align: center;
   color: #fff;
-  padding-top: 100px; }
+  padding-top: 100px;
+  padding-bottom: 47px; }
 
 .learn, .benefit {
   display: -webkit-box;
@@ -10496,7 +10497,8 @@ main {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   margin-right: -10px;
-  margin-left: -10px; }
+  margin-left: -10px;
+  margin-bottom: 47px; }
   .learn__item, .benefit__item {
     position: relative;
     width: 100%;
@@ -10537,3 +10539,6 @@ main {
     line-height: 17px;
     padding: 0 60px;
     margin-bottom: 50px; }
+
+.benefit {
+  margin-bottom: 0; }
