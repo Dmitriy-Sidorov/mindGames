@@ -15,6 +15,10 @@ h2 {
   line-height: 1;
   text-align: center;
   margin-bottom: 92px;
+  @include make-col-ready;
+  @include media-breakpoint-up(xs) {
+    @include make-col(12)
+  }
 }
 
 h3 {
@@ -183,7 +187,7 @@ main {
   }
   &__btn {
     background: $color-button;
-    color: #fff;
+    color: $text-white;
     box-shadow: 0 0 8px 0 rgba(0, 16, 27, 0.2);
     font-size: 16px;
     width: 100%;
@@ -195,15 +199,13 @@ main {
 
 /*--------section — for whom------------*/
 
+.sectionOne {
+  padding-bottom: 57px;
+}
+
 .forWhom {
   @include make-row;
 
-  &__h2 {
-    @include make-col-ready;
-    @include media-breakpoint-up(xs) {
-      @include make-col(12)
-    }
-  }
   &__col {
     display: flex;
     flex-direction: row;
@@ -261,6 +263,30 @@ main {
   }
 }
 
+/*------------section of learn------------------*/
 
+.sectionTwo {
+  background: $dark-blue;
+  text-align: center;
+  color: $text-white;
+  padding-top: 100px;
+}
 
+.learn {
+  @include make-row;
 
+  &__item {
+    @include make-col-ready;
+    @include media-breakpoint-up(md) {
+      @include make-col(4);
+    }
+  }
+  &__h3 {
+    color: $text-white;
+  }
+  &__paragraph {
+    font-size: 15px;
+    line-height: 17px;
+    padding: 0 60px;
+  }
+}
