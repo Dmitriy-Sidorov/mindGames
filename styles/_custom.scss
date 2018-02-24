@@ -104,7 +104,6 @@ h3 {
   }
 }
 
-
 /*----------top header------------*/
 
 header {
@@ -292,13 +291,22 @@ main {
     align-items: center;
     justify-content: center;
   }
-  &__number{
+  &__number {
     position: absolute;
     padding-top: 12px;
   }
   &__icon {
-    margin-bottom: 40px;
+    &-people {
+      @include dynamic-image(icon-people, $margin-bottom: 40px);
+    }
+    &-tool {
+      @include dynamic-image(icon-tool, $margin-bottom: 40px);
+    }
+    &-gift {
+      @include dynamic-image(icon-gift, $margin-bottom: 40px);
+    }
   }
+
   &__h3 {
     color: $text-white;
     margin-bottom: 32px;

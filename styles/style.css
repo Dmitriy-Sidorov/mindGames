@@ -10529,8 +10529,27 @@ main {
   .learn__number, .benefit__number {
     position: absolute;
     padding-top: 12px; }
-  .learn__icon, .benefit__icon {
-    margin-bottom: 40px; }
+  .learn__icon-people, .benefit__icon-people {
+    width: 100px;
+    height: 100px;
+    margin: 0 auto 40px;
+    background: url("../img/icon-people.png") center center no-repeat; }
+    .learn__icon-people:hover, .benefit__icon-people:hover {
+      background: url("../img/icon-people-hover.png") center center no-repeat; }
+  .learn__icon-tool, .benefit__icon-tool {
+    width: 100px;
+    height: 100px;
+    margin: 0 auto 40px;
+    background: url("../img/icon-tool.png") center center no-repeat; }
+    .learn__icon-tool:hover, .benefit__icon-tool:hover {
+      background: url("../img/icon-tool-hover.png") center center no-repeat; }
+  .learn__icon-gift, .benefit__icon-gift {
+    width: 100px;
+    height: 100px;
+    margin: 0 auto 40px;
+    background: url("../img/icon-gift.png") center center no-repeat; }
+    .learn__icon-gift:hover, .benefit__icon-gift:hover {
+      background: url("../img/icon-gift-hover.png") center center no-repeat; }
   .learn__h3, .benefit__h3 {
     color: #fff;
     margin-bottom: 32px; }
