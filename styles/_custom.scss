@@ -269,6 +269,7 @@ main {
   color: $text-white;
   padding-top: 100px;
   padding-bottom: 47px;
+  margin-bottom: 100px;
 }
 
 .learn, .benefit {
@@ -322,3 +323,57 @@ main {
 .benefit {
   margin-bottom: 0;
 }
+
+/*---------------section speakers------------------*/
+
+.speakers {
+  @include make-row;
+
+  &__slider {
+    @include make-col-ready;
+    @include media-breakpoint-up(md) {
+      @include make-col(12);
+    }
+  }
+  &__slide {
+    //flex-wrap: wrap;
+    padding: 0 100px;
+  }
+  &__ava {
+    width: 200px;
+    height: 270px;
+    margin-right: (50px / $max-width-container) *100%;
+    flex-grow: 1;
+  }
+  &__history {
+    flex-grow: 3.9;
+  }
+  &__listing {
+    margin-left: 1.2em;
+  }
+}
+
+.carousel-control-prev-icon, .carousel-control-next-icon {
+  position: absolute;
+  background-color: #e5e5e5;
+  width: 40px;
+  height: 40px;
+  background-size: 15px 17px;
+  border-radius: 50%;
+  &:hover {
+    background-color: #999999;
+  }
+}
+.carousel-control-prev-icon {
+  left: 7px;
+  background-position: left 10px center;
+}
+.carousel-control-next-icon {
+  right: 7px;
+  background-position: right 10px center;
+}
+
+
+
+
+
