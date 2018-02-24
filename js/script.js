@@ -10,3 +10,9 @@ $('.learn__circle').circleProgress({
         color: "#ffffff"
     }
 });
+$('#carousel-speakers').carousel({
+    interval: 5000
+});
+$('#carousel-reviews').carousel({
+    interval: 5000
+});
