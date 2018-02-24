@@ -8,6 +8,16 @@
   background: $url left top 5% no-repeat;
 }
 
+@mixin dynamic-image($name-img, $positions: center center, $sizes: 100px, $margin-bottom: 0px) {
+  width: $sizes;
+  height: $sizes;
+  margin: 0 auto $margin-bottom;
+  background: url('../img/' + $name-img + '.png') $positions no-repeat;
+  &:hover {
+    background: url('../img/' + $name-img + '-hover.png') $positions no-repeat;
+  }
+}
+
 @mixin name-form() {
   color: $light-black;
   font-family: 'P22UndergroundCYProMedium', sans-serif;
