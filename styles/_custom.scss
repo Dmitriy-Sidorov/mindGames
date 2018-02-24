@@ -365,13 +365,28 @@ main {
   }
 }
 .carousel-control-prev-icon {
-  left: 7px;
+  left: 10px;
   background-position: left 10px center;
 }
 .carousel-control-next-icon {
-  right: 7px;
+  right: 10px;
   background-position: right 10px center;
 }
+.carousel-indicators {
+  bottom: -27px;
+  li {
+    width: 13px;
+    height: 13px;
+    border-radius: 50%;
+    background-color: #999999;
+    opacity: 0.25;
+  }
+  .active {
+    opacity: 1;
+    background-color: #999999;
+  }
+}
+
 
 
 
