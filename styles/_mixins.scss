@@ -73,3 +73,14 @@
     box-shadow: inset 0 0 15px 1px rgba(117, 104, 66, 0.48)
   }
 }
+
+@mixin listing() {
+  margin-left: 1.1em;
+  font-size: 15px;
+  line-height: 17px;
+
+  li {
+    margin-bottom: 7px;
+  }
+}
+

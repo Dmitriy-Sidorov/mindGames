@@ -10188,6 +10188,10 @@ main {
 
 /*---------------section speakers------------------*/
 
+.sectionThree {
+	margin-bottom: 200px;
+}
+
 .speakers {
 	display: -webkit-box;
 	display: -ms-flexbox;
@@ -10199,6 +10203,7 @@ main {
 }
 
 .speakers__slider {
+	margin-top: -19px;
 	position: relative;
 	width: 100%;
 	min-height: 1px;
@@ -10208,13 +10213,13 @@ main {
 
 .speakers__slide {
 	padding: 0 100px;
-	margin-bottom: 50px;
+	margin-bottom: 60px;
 }
 
 .speakers__ava {
 	width: 200px;
 	height: 270px;
-	margin-right: 4.2372881356%;
+	margin-right: 5.1020408163%;
 	-webkit-box-flex: 1;
 	-ms-flex-positive: 1;
 	flex-grow: 1;
@@ -10224,10 +10229,26 @@ main {
 	-webkit-box-flex: 3.9;
 	-ms-flex-positive: 3.9;
 	flex-grow: 3.9;
+	padding-top: 19px;
+}
+
+.speakers__history h3 {
+	margin-bottom: 7px;
+}
+
+.speakers__history small {
+	font-size: 15px;
 }
 
 .speakers__listing {
-	margin-left: 1.2em;
+	margin-top: 31px;
+	margin-left: 1.1em;
+	font-size: 15px;
+	line-height: 17px;
+}
+
+.speakers__listing li {
+	margin-bottom: 7px;
 }
 
 .carousel-control-prev-icon,
@@ -10238,6 +10259,7 @@ main {
 	height: 40px;
 	background-size: 15px 17px;
 	border-radius: 50%;
+	margin-top: -7px;
 }
 
 .carousel-control-prev-icon:hover,
@@ -10285,6 +10307,7 @@ main {
 }
 
 .reviews__slider {
+	margin-top: -19px;
 	position: relative;
 	width: 100%;
 	min-height: 1px;
@@ -10299,8 +10322,10 @@ main {
 	-webkit-box-pack: justify;
 	-ms-flex-pack: justify;
 	justify-content: space-between;
-	padding: 0 100px;
+	padding: 0 80px;
 	margin-bottom: 50px;
+	margin-left: -22px;
+	margin-right: -22px;
 }
 
 .reviews__comment {
@@ -10314,15 +10339,30 @@ main {
 	-webkit-box-flex: 1;
 	-ms-flex-positive: 1;
 	flex-grow: 1;
+	padding: 0 22px;
 }
 
-.reviews__ava {
-	width: 200px;
-	height: 270px;
+.reviews__video {
+	width: 100%;
+	margin-bottom: 30px;
+}
+
+.reviews__text h3 {
+	margin-bottom: 7px;
+}
+
+.reviews__text small {
+	font-size: 15px;
 }
 
 .reviews__listing {
-	margin-left: 1.2em;
+	margin-left: 1.1em;
+	font-size: 15px;
+	line-height: 17px;
+}
+
+.reviews__listing li {
+	margin-bottom: 7px;
 }
 
 @media (min-width: 576px) {
