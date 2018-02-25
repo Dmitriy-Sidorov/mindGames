@@ -251,7 +251,8 @@ main {
     }
   }
   &__listing {
-    @include listing;
+    margin-left: 1.1em;
+    @include text;
   }
 }
 
@@ -356,7 +357,8 @@ main {
   }
   &__listing {
     margin-top: 31px;
-    @include listing;
+    margin-left: 1.1em;
+    @include text;
   }
 }
 
@@ -436,8 +438,9 @@ main {
       font-size: 15px;
     }
   }
-  &__listing {
-    @include listing;
+  &__review {
+    margin-top: 27px;
+    @include text;
   }
 }
 
