@@ -12,9 +12,9 @@
   width: $sizes;
   height: $sizes;
   margin: 0 auto $margin-bottom;
-  background: url('../img/' + $name-img + '.png') $positions no-repeat;
+  background: url('../img/icon/' + $name-img + '.png') $positions no-repeat;
   &:hover {
-    background: url('../img/' + $name-img + '-hover.png') $positions no-repeat;
+    background: url('../img/icon/' + $name-img + '-hover.png') $positions no-repeat;
   }
 }
 
@@ -52,13 +52,13 @@
     }
   }
   &-name {
-    @include input-icon(url("../img/input-name.png"));
+    @include input-icon(url("../img/icon/input-name.png"));
   }
   &-phone {
-    @include input-icon(url("../img/input-phone.png"));
+    @include input-icon(url("../img/icon/input-phone.png"));
   }
   &-email {
-    @include input-icon(url("../img/input-email.png"));
+    @include input-icon(url("../img/icon/input-email.png"));
   }
 }
 

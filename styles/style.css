@@ -10187,11 +10187,11 @@ h3 {
       .verticalForm__input:focus::placeholder {
         opacity: 0; }
     .verticalForm__input-name {
-      background: url("../img/input-name.png") left top 5% no-repeat; }
+      background: url("../img/icon/input-name.png") left top 5% no-repeat; }
     .verticalForm__input-phone {
-      background: url("../img/input-phone.png") left top 5% no-repeat; }
+      background: url("../img/icon/input-phone.png") left top 5% no-repeat; }
     .verticalForm__input-email {
-      background: url("../img/input-email.png") left top 5% no-repeat; }
+      background: url("../img/icon/input-email.png") left top 5% no-repeat; }
   .verticalForm__footnote {
     margin-top: -1px;
     margin-bottom: 1px; }
@@ -10228,6 +10228,8 @@ h3 {
     background: #fff;
     padding: 50px;
     padding-bottom: 32px; }
+    .horizontalForm__wrapper-fon {
+      background: #f8f8f8; }
   .horizontalForm__paragraph {
     color: #333333;
     font-family: 'P22UndergroundCYProMedium', sans-serif;
@@ -10289,11 +10291,11 @@ h3 {
       .horizontalForm__input:focus::placeholder {
         opacity: 0; }
     .horizontalForm__input-name {
-      background: url("../img/input-name.png") left top 5% no-repeat; }
+      background: url("../img/icon/input-name.png") left top 5% no-repeat; }
     .horizontalForm__input-phone {
-      background: url("../img/input-phone.png") left top 5% no-repeat; }
+      background: url("../img/icon/input-phone.png") left top 5% no-repeat; }
     .horizontalForm__input-email {
-      background: url("../img/input-email.png") left top 5% no-repeat; }
+      background: url("../img/icon/input-email.png") left top 5% no-repeat; }
   .horizontalForm__btn {
     background: #e7af10;
     color: #fff;
@@ -10306,6 +10308,27 @@ h3 {
     .horizontalForm__btn:focus {
       -webkit-box-shadow: inset 0 0 15px 1px rgba(117, 104, 66, 0.48);
               box-shadow: inset 0 0 15px 1px rgba(117, 104, 66, 0.48); }
+
+/*----------carousel---------------*/
+.carousel-control-prev-icon {
+  left: 10px;
+  background-position: left 10px center; }
+
+.carousel-control-next-icon {
+  right: 10px;
+  background-position: right 10px center; }
+
+.carousel-indicators {
+  bottom: 0; }
+  .carousel-indicators li {
+    width: 13px;
+    height: 13px;
+    border-radius: 50%;
+    background-color: #999999;
+    opacity: 0.25; }
+  .carousel-indicators .active {
+    opacity: 1;
+    background-color: #999999; }
 
 /*----------top header------------*/
 header {
@@ -10382,7 +10405,7 @@ main {
     line-height: 34px;
     list-style: none; }
     .mainScreen__list li {
-      background: url(../img/check-mark.png) left center no-repeat;
+      background: url(../img/icon/check-mark.png) left center no-repeat;
       padding-left: 34px; }
 
 /*--------section тАФ for whom------------*/
@@ -10534,23 +10557,23 @@ main {
     width: 100px;
     height: 100px;
     margin: 0 auto 40px;
-    background: url("../img/icon-people.png") center center no-repeat; }
+    background: url("../img/icon/icon-people.png") center center no-repeat; }
     .learn__icon-people:hover, .benefit__icon-people:hover {
-      background: url("../img/icon-people-hover.png") center center no-repeat; }
+      background: url("../img/icon/icon-people-hover.png") center center no-repeat; }
   .learn__icon-tool, .benefit__icon-tool {
     width: 100px;
     height: 100px;
     margin: 0 auto 40px;
-    background: url("../img/icon-tool.png") center center no-repeat; }
+    background: url("../img/icon/icon-tool.png") center center no-repeat; }
     .learn__icon-tool:hover, .benefit__icon-tool:hover {
-      background: url("../img/icon-tool-hover.png") center center no-repeat; }
+      background: url("../img/icon/icon-tool-hover.png") center center no-repeat; }
   .learn__icon-gift, .benefit__icon-gift {
     width: 100px;
     height: 100px;
     margin: 0 auto 40px;
-    background: url("../img/icon-gift.png") center center no-repeat; }
+    background: url("../img/icon/icon-gift.png") center center no-repeat; }
     .learn__icon-gift:hover, .benefit__icon-gift:hover {
-      background: url("../img/icon-gift-hover.png") center center no-repeat; }
+      background: url("../img/icon/icon-gift-hover.png") center center no-repeat; }
   .learn__h3, .benefit__h3 {
     color: #fff;
     margin-bottom: 32px; }
@@ -10626,26 +10649,6 @@ main {
   .carousel-control-prev-icon:hover, .carousel-control-next-icon:hover {
     background-color: #999999; }
 
-.carousel-control-prev-icon {
-  left: 10px;
-  background-position: left 10px center; }
-
-.carousel-control-next-icon {
-  right: 10px;
-  background-position: right 10px center; }
-
-.carousel-indicators {
-  bottom: 0; }
-  .carousel-indicators li {
-    width: 13px;
-    height: 13px;
-    border-radius: 50%;
-    background-color: #999999;
-    opacity: 0.25; }
-  .carousel-indicators .active {
-    opacity: 1;
-    background-color: #999999; }
-
 /*---------section reviews--------------*/
 .reviews {
   display: -webkit-box;
@@ -10698,9 +10701,48 @@ main {
     margin-bottom: 7px; }
   .reviews__text small {
     font-size: 15px; }
-  .reviews__listing {
-    margin-left: 1.1em;
+  .reviews__review {
+    margin-top: 27px;
     font-size: 15px;
     line-height: 17px; }
-    .reviews__listing li {
+    .reviews__review li {
       margin-bottom: 7px; }
+  .reviews .carousel-control-prev-icon, .reviews .carousel-control-next-icon {
+    top: 115px; }
+
+/*----------section place-------------*/
+.sectionFifth {
+  background-color: #125e94;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center; }
+
+.place {
+  max-width: 1366px;
+  background: url("../img/hall-foto.jpg") no-repeat;
+  background-size: 1366px auto;
+  background-position: center center;
+  padding: 13.17715959% 36.6032210835%; }
+  @media (min-width: 992px) {
+    .place {
+      padding: 180px 500px; } }
+  .place__container {
+    background-color: #fff;
+    padding: 50px;
+    text-align: left; }
+  .place__h2 {
+    font-size: 30px;
+    font-family: 'P22UndergroundCYProMedium', sans-serif;
+    line-height: 1;
+    margin-bottom: 43px;
+    margin-left: -1px;
+    margin-right: -2px; }
+  .place__item {
+    margin-bottom: 14px; }
+    .place__item:last-child {
+      margin-bottom: 0; }
+    .place__item img {
+      margin-right: 15px; }
