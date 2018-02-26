@@ -82,6 +82,10 @@ h3 {
     background: #fff;
     padding: 50px;
     padding-bottom: 32px;
+
+    &-fon {
+      background: #f8f8f8;
+    }
   }
   &__paragraph {
     @include name-form();
@@ -103,6 +107,34 @@ h3 {
     width: 250px;
   }
 }
+
+/*----------carousel---------------*/
+
+.carousel-control-prev-icon {
+  left: 10px;
+  background-position: left 10px center;
+}
+
+.carousel-control-next-icon {
+  right: 10px;
+  background-position: right 10px center;
+}
+
+.carousel-indicators {
+  bottom: 0;
+  li {
+    width: 13px;
+    height: 13px;
+    border-radius: 50%;
+    background-color: #999999;
+    opacity: 0.25;
+  }
+  .active {
+    opacity: 1;
+    background-color: #999999;
+  }
+}
+
 
 /*----------top header------------*/
 
@@ -189,7 +221,7 @@ main {
     list-style: none;
 
     li {
-      background: url(../img/check-mark.png) left center no-repeat;
+      background: url(../img/icon/check-mark.png) left center no-repeat;
       padding-left: 34px;
     }
   }
@@ -375,31 +407,6 @@ main {
   }
 }
 
-.carousel-control-prev-icon {
-  left: 10px;
-  background-position: left 10px center;
-}
-
-.carousel-control-next-icon {
-  right: 10px;
-  background-position: right 10px center;
-}
-
-.carousel-indicators {
-  bottom: 0;
-  li {
-    width: 13px;
-    height: 13px;
-    border-radius: 50%;
-    background-color: #999999;
-    opacity: 0.25;
-  }
-  .active {
-    opacity: 1;
-    background-color: #999999;
-  }
-}
-
 /*---------section reviews--------------*/
 
 .reviews {
@@ -442,6 +449,50 @@ main {
     margin-top: 27px;
     @include text;
   }
+  .carousel-control-prev-icon, .carousel-control-next-icon {
+    top: 115px;
+  }
 }
 
+/*----------section place-------------*/
 
+.sectionFifth {
+  background-color: $dark-blue;
+  display: flex;
+  justify-content: center;
+}
+
+.place {
+  max-width: 1366px;
+  background: url("../img/hall-foto.jpg") no-repeat;
+  background-size: 1366px auto;
+  background-position: center center;
+  padding: ((180px / 1366px) * 100%) ((500px / 1366px) * 100%);
+  @include media-breakpoint-up(lg) {
+    padding: 180px 500px;
+  }
+  &__container {
+    background-color: $text-white;
+    padding: 50px;
+    text-align: left;
+  }
+  &__h2 {
+    font-size: 30px;
+    font-family: 'P22UndergroundCYProMedium', sans-serif;
+    line-height: 1;
+    margin-bottom: 43px;
+    margin-left: -1px;
+    margin-right: -2px;
+  }
+  &__item {
+    margin-bottom: 14px;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+
+    img {
+      margin-right: 15px;
+    }
+  }
+}
