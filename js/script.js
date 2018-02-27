@@ -1,5 +1,6 @@
-$(function () {
-
+$(function() {
+    $.mask.definitions['~'] = "[+-]";
+    $('.jq-phone').mask('+7 (999) 999-99-99');
 });
 $('.learn__circle').circleProgress({
     size: "120",

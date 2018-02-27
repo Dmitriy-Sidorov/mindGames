@@ -10115,6 +10115,9 @@ h3 {
   margin-bottom: 24px;
   color: #125e94; }
 
+sup {
+  font-size: 65%; }
+
 /*--------------forms--------------*/
 .verticalForm {
   position: relative;
@@ -10749,12 +10752,11 @@ main {
       margin-right: 15px; }
 
 /*----------section map---------------*/
-.sectionSixth {
-  margin-bottom: 74px; }
-
 /*----------section begin---------------*/
 .sectionSeventh {
-  background: #fdfdfd url(../img/puzzle.png) bottom 7% center no-repeat; }
+  background: #fdfdfd url(../img/puzzle.png) bottom 29% center no-repeat;
+  padding-top: 75px;
+  padding-bottom: 75px; }
 
 .begin {
   position: relative;
@@ -10774,4 +10776,21 @@ main {
     text-align: left;
     line-height: 1;
     color: #125e94;
-    text-transform: uppercase; }
+    text-transform: uppercase;
+    padding-top: 16px; }
+
+/*------------footer-------------*/
+footer {
+  padding-top: 38px;
+  padding-bottom: 38px; }
+
+.contactData__privacy a {
+  color: #c7c7c7;
+  text-decoration: underline; }
+  .contactData__privacy a:hover {
+    text-decoration: none; }
+
+.contactData__details-footer .contactData__place {
+  padding-right: 0; }
+.contactData__details-footer .contactData__date {
+  padding-right: 25px; }

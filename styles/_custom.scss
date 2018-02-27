@@ -29,6 +29,10 @@ h3 {
   color: $dark-blue;
 }
 
+sup {
+  font-size: 65%;
+}
+
 /*--------------forms--------------*/
 
 .verticalForm {
@@ -500,13 +504,15 @@ main {
 /*----------section map---------------*/
 
 .sectionSixth {
-  margin-bottom: 74px;
+
 }
 
 /*----------section begin---------------*/
 
 .sectionSeventh {
-  background: #fdfdfd url(../img/puzzle.png) bottom 7% center no-repeat;
+  background: #fdfdfd url(../img/puzzle.png) bottom 29% center no-repeat;
+  padding-top: 75px;
+  padding-bottom: 75px;
 }
 
 .begin {
@@ -521,5 +527,37 @@ main {
     line-height: 1;
     color: $dark-blue;
     text-transform: uppercase;
+    padding-top: 16px;
+  }
+}
+
+/*------------footer-------------*/
+
+footer {
+  padding-top: 38px;
+  padding-bottom: 38px;
+}
+
+.contactData {
+  &__privacy {
+    a {
+      color: $text-grey;
+      text-decoration: underline;
+
+      &:hover {
+        text-decoration: none;
+      }
+    }
+  }
+}
+
+.contactData__details-footer {
+  .contactData {
+    &__place {
+      padding-right: 0;
+    }
+    &__date {
+      padding-right: 25px;
+    }
   }
 }
