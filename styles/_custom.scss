@@ -135,7 +135,6 @@ h3 {
   }
 }
 
-
 /*----------top header------------*/
 
 header {
@@ -354,7 +353,7 @@ main {
 /*---------------section speakers------------------*/
 
 .sectionThree {
-  margin-bottom: 200px;
+  margin-bottom: 184px;
 }
 
 .speakers {
@@ -464,11 +463,12 @@ main {
 
 .place {
   max-width: 1366px;
+  width: 100%;
   background: url("../img/hall-foto.jpg") no-repeat;
-  background-size: 1366px auto;
+  background-size: auto 100%;
   background-position: center center;
   padding: ((180px / 1366px) * 100%) ((500px / 1366px) * 100%);
-  @include media-breakpoint-up(lg) {
+  @media (min-width: 1350px) {
     padding: 180px 500px;
   }
   &__container {
@@ -500,5 +500,26 @@ main {
 /*----------section map---------------*/
 
 .sectionSixth {
+  margin-bottom: 74px;
+}
 
+/*----------section begin---------------*/
+
+.sectionSeventh {
+  background: #fdfdfd url(../img/puzzle.png) bottom 7% center no-repeat;
+}
+
+.begin {
+  @include make-col-ready;
+  @include media-breakpoint-up(md) {
+    @include make-col(8);
+  }
+  &__h1 {
+    font-family: 'P22UndergroundCYProHeavy', sans-serif;
+    font-size: 50px;
+    text-align: left;
+    line-height: 1;
+    color: $dark-blue;
+    text-transform: uppercase;
+  }
 }

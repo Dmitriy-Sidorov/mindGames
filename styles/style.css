@@ -10588,7 +10588,7 @@ main {
 
 /*---------------section speakers------------------*/
 .sectionThree {
-  margin-bottom: 200px; }
+  margin-bottom: 184px; }
 
 .speakers {
   display: -webkit-box;
@@ -10722,11 +10722,12 @@ main {
 
 .place {
   max-width: 1366px;
+  width: 100%;
   background: url("../img/hall-foto.jpg") no-repeat;
-  background-size: 1366px auto;
+  background-size: auto 100%;
   background-position: center center;
   padding: 13.17715959% 36.6032210835%; }
-  @media (min-width: 992px) {
+  @media (min-width: 1350px) {
     .place {
       padding: 180px 500px; } }
   .place__container {
@@ -10748,3 +10749,29 @@ main {
       margin-right: 15px; }
 
 /*----------section map---------------*/
+.sectionSixth {
+  margin-bottom: 74px; }
+
+/*----------section begin---------------*/
+.sectionSeventh {
+  background: #fdfdfd url(../img/puzzle.png) bottom 7% center no-repeat; }
+
+.begin {
+  position: relative;
+  width: 100%;
+  min-height: 1px;
+  padding-right: 10px;
+  padding-left: 10px; }
+  @media (min-width: 768px) {
+    .begin {
+      -webkit-box-flex: 0;
+          -ms-flex: 0 0 66.6666666667%;
+              flex: 0 0 66.6666666667%;
+      max-width: 66.6666666667%; } }
+  .begin__h1 {
+    font-family: 'P22UndergroundCYProHeavy', sans-serif;
+    font-size: 50px;
+    text-align: left;
+    line-height: 1;
+    color: #125e94;
+    text-transform: uppercase; }
