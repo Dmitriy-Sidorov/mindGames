@@ -10333,6 +10333,21 @@ sup {
     opacity: 1;
     background-color: #999999; }
 
+/*-----------owl--------------*/
+.owl-prev, .owl-next {
+  font-size: 40px;
+  color: #c7c7c7;
+  position: absolute;
+  top: 130px; }
+  .owl-prev:hover, .owl-next:hover {
+    color: #999999; }
+
+.owl-prev {
+  left: 0; }
+
+.owl-next {
+  right: 0; }
+
 /*----------top header------------*/
 header {
   background: white;
@@ -10354,20 +10369,81 @@ header {
       -ms-flex-pack: justify;
           justify-content: space-between;
   margin: 0; }
+  @media (max-width: 575.98px) {
+    .contactData {
+      -webkit-box-pack: center;
+          -ms-flex-pack: center;
+              justify-content: center;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+              flex-direction: column; } }
+  @media (max-width: 991.98px) {
+    .contactData {
+      -ms-flex-pack: distribute;
+          justify-content: space-around; } }
   .contactData__details {
     text-align: right; }
+    @media (max-width: 575.98px) {
+      .contactData__details {
+        text-align: center;
+        margin-top: 20px; } }
+    @media (max-width: 1199.98px) {
+      .contactData__details {
+        text-align: left;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex; }
+        .contactData__details:first-child {
+          padding-bottom: 10px; } }
   .contactData__place img, .contactData__date img {
     margin-right: 10px; }
   .contactData__place {
     padding-right: 25px; }
+    @media (max-width: 767.98px) {
+      .contactData__place {
+        padding-bottom: 10px; } }
   .contactData__tel {
     text-align: right; }
+    @media (max-width: 575.98px) {
+      .contactData__tel {
+        text-align: center;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex; } }
+    @media (max-width: 991.98px) {
+      .contactData__tel {
+        margin-top: 20px; } }
+    @media (max-width: 1199.98px) {
+      .contactData__tel {
+        text-align: left;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex; } }
     .contactData__tel a {
       font-size: 25px;
       font-family: 'P22UndergroundCYProDemi', sans-serif;
       color: #333333; }
+      @media (max-width: 575.98px) {
+        .contactData__tel a {
+          font-size: 20px; } }
       .contactData__tel a:first-child {
         padding-right: 25px; }
+        @media (max-width: 575.98px) {
+          .contactData__tel a:first-child {
+            padding-right: 0; } }
       .contactData__tel a span {
         color: #125e94; }
 
@@ -10654,26 +10730,10 @@ main {
 
 /*---------section reviews--------------*/
 .reviews {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  margin-right: -10px;
-  margin-left: -10px; }
+  padding: 0 80px;
+  margin-bottom: 97px; }
   .reviews__slider {
-    margin-top: -19px;
-    position: relative;
-    width: 100%;
-    min-height: 1px;
-    padding-right: 10px;
-    padding-left: 10px; }
-    @media (min-width: 768px) {
-      .reviews__slider {
-        -webkit-box-flex: 0;
-            -ms-flex: 0 0 100%;
-                flex: 0 0 100%;
-        max-width: 100%; } }
+    margin-top: -19px; }
   .reviews__slide {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -10682,9 +10742,7 @@ main {
         -ms-flex-pack: justify;
             justify-content: space-between;
     padding: 0 80px;
-    margin-bottom: 50px;
-    margin-left: -22px;
-    margin-right: -22px; }
+    margin-bottom: 50px; }
   .reviews__comment {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -10695,8 +10753,7 @@ main {
             align-items: center;
     -webkit-box-flex: 1;
         -ms-flex-positive: 1;
-            flex-grow: 1;
-    padding: 0 22px; }
+            flex-grow: 1; }
   .reviews__video {
     width: 100%;
     margin-bottom: 30px; }
