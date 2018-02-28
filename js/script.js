@@ -58,7 +58,7 @@ $(function () {
                 items:2,
                 nav:true
             },
-            992:{
+            1200:{
                 items:3,
                 nav:true
             }

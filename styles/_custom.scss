@@ -194,7 +194,7 @@ sup {
   font-size: 40px;
   color: $text-grey;
   position: absolute;
-  top: 130px;
+  top: 115px;
   &:hover {
     color: #999999;
   }
@@ -573,16 +573,23 @@ main {
   padding: 0 80px;
   margin-bottom: 97px;
 
-  &__slider {
-    margin-top: -19px;
+  @include media-breakpoint-down(sm) {
+    padding: 0 20px;
+    margin-bottom: 97px * 0.6;
+  }
+  @include media-breakpoint-down(md) {
+    padding: 0 60px;
+    margin-bottom: 97px * 0.8;
+  }
+  &__h2 {
+    @include media-breakpoint-down(sm) {
+      margin-bottom: 97px * 0.6;
+    }
+    @include media-breakpoint-down(md) {
+      margin-bottom: 97px * 0.8;
+    }
   }
   &__slide {
-    display: flex;
-    justify-content: space-between;
-    padding: 0 80px;
-    margin-bottom: 50px;
-  }
-  &__comment {
     flex-direction: column;
     align-items: center;
     flex-grow: 1;
@@ -602,9 +609,6 @@ main {
   &__review {
     margin-top: 27px;
     @include text;
-  }
-  .carousel-control-prev-icon, .carousel-control-next-icon {
-    top: 115px;
   }
 }
 
