@@ -10879,22 +10879,43 @@ main {
   display: flex;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
-          justify-content: center; }
+          justify-content: center;
+  margin-top: 99px; }
+  @media (max-width: 991.98px) {
+    .sectionFifth {
+      margin-top: 59.4px; } }
 
 .place {
   max-width: 1366px;
+  height: 700px;
   width: 100%;
   background: url("../img/hall-foto.jpg") no-repeat;
   background-size: auto 100%;
   background-position: center center;
-  padding: 13.17715959% 36.6032210835%; }
-  @media (min-width: 1350px) {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center; }
+  @media (max-width: 767.98px) {
     .place {
-      padding: 180px 500px; } }
+      height: 500px; } }
   .place__container {
     background-color: #fff;
     padding: 50px;
     text-align: left; }
+    @media (min-width: 320px) {
+      .place__container {
+        padding: 25px;
+        width: 320px; } }
+    @media (min-width: 992px) {
+      .place__container {
+        padding: 50px;
+        width: 366px; } }
   .place__h2 {
     font-size: 30px;
     font-family: 'P22UndergroundCYProMedium', sans-serif;

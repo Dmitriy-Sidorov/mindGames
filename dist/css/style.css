@@ -10379,15 +10379,25 @@ main {
 	-webkit-box-pack: center;
 	-ms-flex-pack: center;
 	justify-content: center;
+	margin-top: 99px;
 }
 
 .place {
 	max-width: 1366px;
+	height: 700px;
 	width: 100%;
 	background: url("../img/hall-foto.jpg") no-repeat;
 	background-size: auto 100%;
 	background-position: center center;
-	padding: 13.17715959% 36.6032210835%;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-pack: center;
+	-ms-flex-pack: center;
+	justify-content: center;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
+	align-items: center;
 }
 
 .place__container {
@@ -10467,6 +10477,15 @@ footer {
 
 .contactData__details-footer .contactData__date {
 	padding-right: 25px;
+}
+
+@media (min-width: 320px) {
+
+.place__container {
+	padding: 25px;
+	width: 320px;
+}
+
 }
 
 @media (min-width: 576px) {
@@ -13258,6 +13277,11 @@ footer {
 	padding: 0 60px;
 }
 
+.place__container {
+	padding: 50px;
+	width: 366px;
+}
+
 }
 
 @media (min-width: 1200px) {
@@ -14099,14 +14123,6 @@ footer {
 
 }
 
-@media (min-width: 1350px) {
-
-.place {
-	padding: 180px 500px;
-}
-
-}
-
 @media (max-width: 1199.98px) {
 
 .table-responsive-xl {
@@ -14268,6 +14284,10 @@ footer {
 	margin-bottom: 77.6px;
 }
 
+.sectionFifth {
+	margin-top: 59.4px;
+}
+
 }
 
 @media (max-width: 767.98px) {
@@ -14370,6 +14390,10 @@ main {
 
 .reviews__h2 {
 	margin-bottom: 58.2px;
+}
+
+.place {
+	height: 500px;
 }
 
 }

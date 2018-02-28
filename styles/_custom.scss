@@ -201,7 +201,7 @@ sup {
 }
 
 .owl-prev {
-left: 0;
+  left: 0;
 }
 
 .owl-next {
@@ -257,7 +257,7 @@ header {
   &__place {
     padding-right: 25px;
     @include media-breakpoint-down(sm) {
-        padding-bottom: 10px;
+      padding-bottom: 10px;
     }
   }
   &__date {
@@ -618,22 +618,40 @@ main {
   background-color: $dark-blue;
   display: flex;
   justify-content: center;
+  margin-top: 99px;
+
+  @include media-breakpoint-down(md) {
+    margin-top: 99px * 0.6;
+  }
 }
 
 .place {
   max-width: 1366px;
+  height: 700px;
   width: 100%;
   background: url("../img/hall-foto.jpg") no-repeat;
   background-size: auto 100%;
   background-position: center center;
-  padding: ((180px / 1366px) * 100%) ((500px / 1366px) * 100%);
-  @media (min-width: 1350px) {
-    padding: 180px 500px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  @include media-breakpoint-down(sm) {
+    height: 500px;
   }
   &__container {
     background-color: $text-white;
     padding: 50px;
     text-align: left;
+
+    @media (min-width: 320px){
+      padding: 25px;
+      width: 320px;
+    }
+    @include media-breakpoint-up(lg) {
+      padding: 50px;
+      width: 366px;
+    }
   }
   &__h2 {
     font-size: 30px;
