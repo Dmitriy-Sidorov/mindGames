@@ -10933,9 +10933,12 @@ main {
 /*----------section map---------------*/
 /*----------section begin---------------*/
 .sectionSeventh {
-  background: #fdfdfd url(../img/puzzle.png) bottom 29% center no-repeat;
   padding-top: 75px;
   padding-bottom: 75px; }
+  @media (max-width: 991.98px) {
+    .sectionSeventh {
+      padding-top: 52.5px;
+      padding-bottom: 52.5px; } }
 
 .begin {
   position: relative;
@@ -10946,9 +10949,9 @@ main {
   @media (min-width: 768px) {
     .begin {
       -webkit-box-flex: 0;
-          -ms-flex: 0 0 66.6666666667%;
-              flex: 0 0 66.6666666667%;
-      max-width: 66.6666666667%; } }
+          -ms-flex: 0 0 33.3333333333%;
+              flex: 0 0 33.3333333333%;
+      max-width: 33.3333333333%; } }
   .begin__h1 {
     font-family: 'P22UndergroundCYProHeavy', sans-serif;
     font-size: 50px;
@@ -10956,7 +10959,51 @@ main {
     line-height: 1;
     color: #125e94;
     text-transform: uppercase;
-    padding-top: 16px; }
+    padding-top: 16px;
+    margin-right: -4px;
+    margin-left: -2px; }
+    @media (max-width: 767.98px) {
+      .begin__h1 {
+        font-size: 39px;
+        margin-bottom: 20px; } }
+    @media (max-width: 991.98px) {
+      .begin__h1 {
+        font-size: 34px; } }
+
+.logotypeCompany {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+  width: 100%;
+  min-height: 1px;
+  padding-right: 10px;
+  padding-left: 10px; }
+  @media (min-width: 768px) {
+    .logotypeCompany {
+      -webkit-box-flex: 0;
+          -ms-flex: 0 0 25%;
+              flex: 0 0 25%;
+      max-width: 25%; } }
+  @media (min-width: 992px) {
+    .logotypeCompany {
+      -webkit-box-flex: 0;
+          -ms-flex: 0 0 33.3333333333%;
+              flex: 0 0 33.3333333333%;
+      max-width: 33.3333333333%; } }
+
+@media (min-width: 768px) {
+  .verticalForm-footer {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 41.6666666667%;
+            flex: 0 0 41.6666666667%;
+    max-width: 41.6666666667%; } }
 
 /*------------footer-------------*/
 footer {
