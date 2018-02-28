@@ -39,6 +39,31 @@ $(function () {
         });
         return false;
     });
+
+    $('.owl-carousel').owlCarousel({
+        loop:true,
+        margin:45,
+        responsiveClass:true,
+        navText: ['<i class="fas fa-chevron-circle-left"></i>','<i class="fas fa-chevron-circle-right"></i>'],
+        responsive:{
+            0:{
+                items:1,
+                nav:false
+            },
+            576:{
+                items:2,
+                nav:false
+            },
+            768:{
+                items:2,
+                nav:true
+            },
+            992:{
+                items:3,
+                nav:true
+            }
+        }
+    })
 });
 $('.learn__circle').circleProgress({
     size: "120",
