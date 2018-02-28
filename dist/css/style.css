@@ -10141,7 +10141,6 @@ main {
 	color: #fff;
 	padding-top: 100px;
 	padding-bottom: 47px;
-	margin-bottom: 100px;
 }
 
 .learn,
@@ -10251,10 +10250,6 @@ main {
 }
 
 /*---------------section speakers------------------*/
-
-.sectionThree {
-	margin-bottom: 184px;
-}
 
 .speakers {
 	display: -webkit-box;
@@ -14366,6 +14361,17 @@ main {
 .learn__paragraph,
 .benefit__paragraph {
 	padding: 0 60px;
+}
+
+.speakers__slide {
+	padding: 0 40px;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	-ms-flex-direction: column;
+	flex-direction: column;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
+	align-items: center;
 }
 
 }

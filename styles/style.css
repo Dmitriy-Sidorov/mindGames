@@ -10671,8 +10671,7 @@ main {
   text-align: center;
   color: #fff;
   padding-top: 100px;
-  padding-bottom: 47px;
-  margin-bottom: 100px; }
+  padding-bottom: 47px; }
   @media (max-width: 991.98px) {
     .sectionTwo {
       padding-top: 80px; } }
@@ -10760,9 +10759,6 @@ main {
   margin-bottom: 0; }
 
 /*---------------section speakers------------------*/
-.sectionThree {
-  margin-bottom: 184px; }
-
 .speakers {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -10787,6 +10783,16 @@ main {
   .speakers__slide {
     padding: 0 100px;
     margin-bottom: 60px; }
+    @media (max-width: 767.98px) {
+      .speakers__slide {
+        padding: 0 40px;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center; } }
   .speakers__ava {
     width: 200px;
     height: 270px;
