@@ -10230,16 +10230,22 @@ sup {
 
 .horizontalForm {
   text-align: left;
-  margin-bottom: 93px;
   position: relative;
   width: 100%;
   min-height: 1px;
   padding-right: 10px;
-  padding-left: 10px; }
+  padding-left: 10px;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 100%;
+          flex: 0 0 100%;
+  max-width: 100%; }
   .horizontalForm__wrapper {
     background: #fff;
     padding: 50px;
     padding-bottom: 32px; }
+    @media (max-width: 767.98px) {
+      .horizontalForm__wrapper {
+        padding: 35px; } }
     .horizontalForm__wrapper-fon {
       background: #f8f8f8; }
   .horizontalForm__paragraph {
@@ -10263,6 +10269,19 @@ sup {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between; }
+    @media (max-width: 767.98px) {
+      .horizontalForm__form {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+        -webkit-box-align: stretch;
+            -ms-flex-align: stretch;
+                align-items: stretch; } }
+    @media (max-width: 1199.98px) {
+      .horizontalForm__form {
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap; } }
   .horizontalForm__input {
     background: transparent;
     border: none;
@@ -10308,6 +10327,16 @@ sup {
       background: url("../img/icon/input-phone.png") left top 5% no-repeat; }
     .horizontalForm__input-email {
       background: url("../img/icon/input-email.png") left top 5% no-repeat; }
+    @media (max-width: 767.98px) {
+      .horizontalForm__input {
+        margin-right: 0;
+        margin-bottom: 15px; } }
+    @media (max-width: 991.98px) {
+      .horizontalForm__input:nth-child(2) {
+        margin-right: 0; } }
+    @media (max-width: 1199.98px) {
+      .horizontalForm__input-email {
+        margin-right: 0; } }
   .horizontalForm__btn {
     background: #e7af10;
     color: #fff;
@@ -10320,6 +10349,21 @@ sup {
     .horizontalForm__btn:focus {
       -webkit-box-shadow: inset 0 0 15px 1px rgba(117, 104, 66, 0.48);
               box-shadow: inset 0 0 15px 1px rgba(117, 104, 66, 0.48); }
+    @media (max-width: 767.98px) {
+      .horizontalForm__btn {
+        width: auto; } }
+    @media (max-width: 991.98px) {
+      .horizontalForm__btn {
+        -webkit-box-flex: inherit;
+            -ms-flex-positive: inherit;
+                flex-grow: inherit; } }
+    @media (max-width: 1199.98px) {
+      .horizontalForm__btn {
+        width: 48%;
+        margin-top: 20px;
+        -webkit-box-flex: 2;
+            -ms-flex-positive: 2;
+                flex-grow: 2; } }
 
 /*----------carousel---------------*/
 .carousel-control-prev-icon {

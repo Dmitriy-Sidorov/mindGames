@@ -88,12 +88,18 @@ sup {
 
 .horizontalForm {
   text-align: left;
-  margin-bottom: 93px;
   @include make-col-ready;
+  @include media-breakpoint-up(xs) {
+    @include make-col(12)
+  }
   &__wrapper {
     background: #fff;
     padding: 50px;
     padding-bottom: 32px;
+
+    @include media-breakpoint-down(sm) {
+      padding: 35px;
+    }
 
     &-fon {
       background: #f8f8f8;
@@ -109,14 +115,49 @@ sup {
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
+
+    @include media-breakpoint-down(sm) {
+      flex-direction: column;
+      align-items: stretch;
+    }
+    @include media-breakpoint-down(lg) {
+      flex-wrap: wrap;
+    }
   }
   &__input {
     @include input();
     margin-right: 20px;
+
+    @include media-breakpoint-down(sm) {
+      margin-right: 0;
+      margin-bottom: 15px;
+    }
+    @include media-breakpoint-down(md) {
+      &:nth-child(2) {
+        margin-right: 0;
+      }
+    }
+    @include media-breakpoint-down(lg) {
+      &-email {
+        margin-right: 0;
+      }
+    }
   }
   &__btn {
     @include form-button();
     width: 250px;
+
+    @include media-breakpoint-down(sm) {
+      width: auto;
+    }
+    @include media-breakpoint-down(md) {
+      flex-grow: inherit;
+    }
+    @include media-breakpoint-down(lg) {
+      width: 48%;
+      margin-top: 20px;
+      flex-grow: 2;
+    }
   }
 }
 
