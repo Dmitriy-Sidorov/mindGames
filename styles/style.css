@@ -10629,6 +10629,9 @@ main {
   padding-top: 100px;
   padding-bottom: 47px;
   margin-bottom: 100px; }
+  @media (max-width: 991.98px) {
+    .sectionTwo {
+      padding-top: 80px; } }
 
 .learn, .benefit {
   display: -webkit-box;
@@ -10639,6 +10642,8 @@ main {
   margin-right: -10px;
   margin-left: -10px;
   margin-bottom: 47px; }
+  .learn__h2, .benefit__h2 {
+    margin-top: 0; }
   .learn__item, .benefit__item {
     position: relative;
     width: 100%;
@@ -10696,8 +10701,16 @@ main {
   .learn__paragraph, .benefit__paragraph {
     font-size: 15px;
     line-height: 17px;
-    padding: 0 60px;
     margin-bottom: 50px; }
+    @media (max-width: 767.98px) {
+      .learn__paragraph, .benefit__paragraph {
+        padding: 0 60px; } }
+    @media (max-width: 991.98px) {
+      .learn__paragraph, .benefit__paragraph {
+        padding: 0 30px; } }
+    @media (min-width: 992px) {
+      .learn__paragraph, .benefit__paragraph {
+        padding: 0 60px; } }
 
 .benefit {
   margin-bottom: 0; }

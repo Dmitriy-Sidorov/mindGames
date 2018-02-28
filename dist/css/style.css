@@ -10153,6 +10153,11 @@ main {
 	margin-bottom: 47px;
 }
 
+.learn__h2,
+.benefit__h2 {
+	margin-top: 0;
+}
+
 .learn__item,
 .benefit__item {
 	position: relative;
@@ -10235,7 +10240,6 @@ main {
 .benefit__paragraph {
 	font-size: 15px;
 	line-height: 17px;
-	padding: 0 60px;
 	margin-bottom: 50px;
 }
 
@@ -13271,6 +13275,11 @@ footer {
 	max-width: 66.6666666667%;
 }
 
+.learn__paragraph,
+.benefit__paragraph {
+	padding: 0 60px;
+}
+
 }
 
 @media (min-width: 1200px) {
@@ -14236,6 +14245,15 @@ footer {
 	line-height: 30px;
 }
 
+.sectionTwo {
+	padding-top: 80px;
+}
+
+.learn__paragraph,
+.benefit__paragraph {
+	padding: 0 30px;
+}
+
 }
 
 @media (max-width: 767.98px) {
@@ -14290,6 +14308,11 @@ main {
 	margin-right: 30px;
 	margin-bottom: 0;
 	margin-top: 0;
+}
+
+.learn__paragraph,
+.benefit__paragraph {
+	padding: 0 60px;
 }
 
 }
