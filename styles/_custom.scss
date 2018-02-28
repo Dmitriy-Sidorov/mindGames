@@ -14,10 +14,15 @@ h2 {
   font-family: 'P22UndergroundCYProMedium', sans-serif;
   line-height: 1;
   text-align: center;
+  margin-top: 97px;
   margin-bottom: 92px;
   @include make-col-ready;
   @include media-breakpoint-up(xs) {
     @include make-col(12)
+  }
+
+  @include media-breakpoint-down(sm) {
+    margin-top: 97px * 0.6;
   }
 }
 
@@ -38,6 +43,9 @@ sup {
 .verticalForm {
   @include make-col-ready;
   @include media-breakpoint-up(md) {
+    @include make-col(6);
+  }
+  @include media-breakpoint-up(lg) {
     @include make-col(4);
   }
   &__wrapper {
@@ -256,11 +264,18 @@ main {
   background: #fdfdfd url(../img/main-background.png) top 54.4% right 46.5% no-repeat;
   padding-top: 75px;
   padding-bottom: 75px;
+  @include media-breakpoint-down(sm) {
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
 }
 
 .mainScreen {
   @include make-col-ready;
   @include media-breakpoint-up(md) {
+    @include make-col(6);
+  }
+  @include media-breakpoint-up(lg) {
     @include make-col(8);
   }
   &__subtitle {
@@ -268,6 +283,12 @@ main {
     font-family: "P22UndergroundCYProThin", sans-serif;
     text-transform: uppercase;
     margin-left: -2px;
+    @include media-breakpoint-down(xs) {
+      font-size: 25px * 0.7;
+    }
+    @include media-breakpoint-down(md) {
+      font-size: 25px * 0.7;
+    }
   }
   &__h1 {
     font-family: 'P22UndergroundCYProHeavy', sans-serif;
@@ -277,13 +298,27 @@ main {
     margin-bottom: 70px;
     margin-top: -2px;
     margin-left: -4px;
+    @include media-breakpoint-down(xs) {
+      font-size: 70px * 0.6;
+      line-height: 1;
+    }
+    @include media-breakpoint-down(md) {
+      font-size: 70px * 0.7;
+      margin-bottom: 70px * 0.5;
+    }
   }
   &__list {
     font-size: 17px;
     padding-left: 0;
     line-height: 34px;
     list-style: none;
-
+    @include media-breakpoint-down(md) {
+      margin-bottom: 20px;
+    }
+    @include media-breakpoint-down(md) {
+      font-size: 15px;
+      line-height: 30px;
+    }
     li {
       background: url(../img/icon/check-mark.png) left center no-repeat;
       padding-left: 34px;
@@ -291,10 +326,9 @@ main {
   }
 }
 
-/*--------section — for whom------------*/
+/*--------section for whom------------*/
 
 .sectionOne {
-  padding-bottom: 57px;
 }
 
 .forWhom {

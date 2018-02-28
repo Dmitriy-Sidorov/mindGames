@@ -9633,6 +9633,7 @@ h2 {
 	font-family: 'P22UndergroundCYProMedium', sans-serif;
 	line-height: 1;
 	text-align: center;
+	margin-top: 97px;
 	margin-bottom: 92px;
 	position: relative;
 	width: 100%;
@@ -10085,11 +10086,7 @@ main {
 	padding-left: 34px;
 }
 
-/*--------section тАФ for whom------------*/
-
-.sectionOne {
-	padding-bottom: 57px;
-}
+/*--------section for whom------------*/
 
 .forWhom {
 	display: -webkit-box;
@@ -12376,16 +12373,16 @@ footer {
 
 .verticalForm {
 	-webkit-box-flex: 0;
-	-ms-flex: 0 0 33.3333333333%;
-	flex: 0 0 33.3333333333%;
-	max-width: 33.3333333333%;
+	-ms-flex: 0 0 50%;
+	flex: 0 0 50%;
+	max-width: 50%;
 }
 
 .mainScreen {
 	-webkit-box-flex: 0;
-	-ms-flex: 0 0 66.6666666667%;
-	flex: 0 0 66.6666666667%;
-	max-width: 66.6666666667%;
+	-ms-flex: 0 0 50%;
+	flex: 0 0 50%;
+	max-width: 50%;
 }
 
 .forWhom__col {
@@ -13258,6 +13255,20 @@ footer {
 
 .text-lg-center {
 	text-align: center !important;
+}
+
+.verticalForm {
+	-webkit-box-flex: 0;
+	-ms-flex: 0 0 33.3333333333%;
+	flex: 0 0 33.3333333333%;
+	max-width: 33.3333333333%;
+}
+
+.mainScreen {
+	-webkit-box-flex: 0;
+	-ms-flex: 0 0 66.6666666667%;
+	flex: 0 0 66.6666666667%;
+	max-width: 66.6666666667%;
 }
 
 }
@@ -14207,6 +14218,24 @@ footer {
 	margin-top: 20px;
 }
 
+.mainScreen__subtitle {
+	font-size: 17.5px;
+}
+
+.mainScreen__h1 {
+	font-size: 49px;
+	margin-bottom: 35px;
+}
+
+.mainScreen__list {
+	margin-bottom: 20px;
+}
+
+.mainScreen__list {
+	font-size: 15px;
+	line-height: 30px;
+}
+
 }
 
 @media (max-width: 767.98px) {
@@ -14229,8 +14258,17 @@ footer {
 	padding-left: 0;
 }
 
+h2 {
+	margin-top: 58.2px;
+}
+
 .contactData__place {
 	padding-bottom: 10px;
+}
+
+main {
+	padding-top: 40px;
+	padding-bottom: 40px;
 }
 
 .forWhom__col {
@@ -14308,6 +14346,15 @@ footer {
 
 .contactData__tel a:first-child {
 	padding-right: 0;
+}
+
+.mainScreen__subtitle {
+	font-size: 17.5px;
+}
+
+.mainScreen__h1 {
+	font-size: 42px;
+	line-height: 1;
 }
 
 .forWhom__col {

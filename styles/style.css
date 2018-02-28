@@ -1,4 +1,3 @@
-@charset "UTF-8";
 @font-face {
   font-family: 'P22UndergroundCYProMedium';
   src: url("../fonts/P22UndergroundCYProMedium.eot");
@@ -10097,6 +10096,7 @@ h2 {
   font-family: 'P22UndergroundCYProMedium', sans-serif;
   line-height: 1;
   text-align: center;
+  margin-top: 97px;
   margin-bottom: 92px;
   position: relative;
   width: 100%;
@@ -10107,6 +10107,9 @@ h2 {
       -ms-flex: 0 0 100%;
           flex: 0 0 100%;
   max-width: 100%; }
+  @media (max-width: 767.98px) {
+    h2 {
+      margin-top: 58.2px; } }
 
 h3 {
   font-size: 20px;
@@ -10126,6 +10129,12 @@ sup {
   padding-right: 10px;
   padding-left: 10px; }
   @media (min-width: 768px) {
+    .verticalForm {
+      -webkit-box-flex: 0;
+          -ms-flex: 0 0 50%;
+              flex: 0 0 50%;
+      max-width: 50%; } }
+  @media (min-width: 992px) {
     .verticalForm {
       -webkit-box-flex: 0;
           -ms-flex: 0 0 33.3333333333%;
@@ -10452,6 +10461,10 @@ main {
   background: #fdfdfd url(../img/main-background.png) top 54.4% right 46.5% no-repeat;
   padding-top: 75px;
   padding-bottom: 75px; }
+  @media (max-width: 767.98px) {
+    main {
+      padding-top: 40px;
+      padding-bottom: 40px; } }
 
 .mainScreen {
   position: relative;
@@ -10462,6 +10475,12 @@ main {
   @media (min-width: 768px) {
     .mainScreen {
       -webkit-box-flex: 0;
+          -ms-flex: 0 0 50%;
+              flex: 0 0 50%;
+      max-width: 50%; } }
+  @media (min-width: 992px) {
+    .mainScreen {
+      -webkit-box-flex: 0;
           -ms-flex: 0 0 66.6666666667%;
               flex: 0 0 66.6666666667%;
       max-width: 66.6666666667%; } }
@@ -10470,6 +10489,12 @@ main {
     font-family: "P22UndergroundCYProThin", sans-serif;
     text-transform: uppercase;
     margin-left: -2px; }
+    @media (max-width: 575.98px) {
+      .mainScreen__subtitle {
+        font-size: 17.5px; } }
+    @media (max-width: 991.98px) {
+      .mainScreen__subtitle {
+        font-size: 17.5px; } }
   .mainScreen__h1 {
     font-family: 'P22UndergroundCYProHeavy', sans-serif;
     font-size: 70px;
@@ -10478,19 +10503,31 @@ main {
     margin-bottom: 70px;
     margin-top: -2px;
     margin-left: -4px; }
+    @media (max-width: 575.98px) {
+      .mainScreen__h1 {
+        font-size: 42px;
+        line-height: 1; } }
+    @media (max-width: 991.98px) {
+      .mainScreen__h1 {
+        font-size: 49px;
+        margin-bottom: 35px; } }
   .mainScreen__list {
     font-size: 17px;
     padding-left: 0;
     line-height: 34px;
     list-style: none; }
+    @media (max-width: 991.98px) {
+      .mainScreen__list {
+        margin-bottom: 20px; } }
+    @media (max-width: 991.98px) {
+      .mainScreen__list {
+        font-size: 15px;
+        line-height: 30px; } }
     .mainScreen__list li {
       background: url(../img/icon/check-mark.png) left center no-repeat;
       padding-left: 34px; }
 
-/*--------section тАФ for whom------------*/
-.sectionOne {
-  padding-bottom: 57px; }
-
+/*--------section for whom------------*/
 .forWhom {
   display: -webkit-box;
   display: -ms-flexbox;

@@ -165,10 +165,10 @@ $paragraph-margin-bottom:   1rem !default;
 // adapting to different screen sizes, for use in media queries.
 
 $grid-breakpoints: (
-  xs: 0,
-  sm: 576px,
-  md: 768px,
-  lg: 992px,
+  xs: 0, // down 575
+  sm: 576px, // down 767
+  md: 768px, // down 991
+  lg: 992px, // down 1199
   xl: 1200px
 ) !default;
 
