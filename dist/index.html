@@ -57,7 +57,7 @@
             <div class="verticalForm">
                 <div class="verticalForm__wrapper">
                     <p class="verticalForm__paragraph">Оставьте заявку,<br>что бы забронировать место прямо сейчас</p>
-                    <form class="verticalForm__form" action="send.php" method="POST">
+                    <form id="form-main" class="form verticalForm__form" action="ajax/send.php" method="get">
                         <input class="verticalForm__input verticalForm__input-name"
                                type="text"
                                minlength="2"
@@ -228,7 +228,7 @@
                 <div class="horizontalForm__wrapper">
                     <p class="horizontalForm__paragraph">Зарегестрируйтесь на мастер-класс «Игры разума» прямо
                         сейчас!</p>
-                    <form class="horizontalForm__form" action="send.php" method="POST">
+                    <form class="form horizontalForm__form" action="ajax/send.php" method="POST">
                         <input class="horizontalForm__input horizontalForm__input-name"
                                type="text"
                                minlength="2"
@@ -506,7 +506,7 @@
                 <div class="horizontalForm__wrapper horizontalForm__wrapper-fon">
                     <p class="horizontalForm__paragraph">Зарегестрируйтесь на мастер-класс «Игры разума» прямо
                         сейчас!</p>
-                    <form class="horizontalForm__form" action="send.php" method="POST">
+                    <form class="form horizontalForm__form" action="ajax/send.php" method="POST">
                         <input class="horizontalForm__input horizontalForm__input-name"
                                type="text"
                                minlength="2"
@@ -570,7 +570,7 @@
             <div class="verticalForm">
                 <div class="verticalForm__wrapper">
                     <p class="verticalForm__paragraph">Оставьте заявку,<br>что бы забронировать место прямо сейчас</p>
-                    <form class="verticalForm__form" action="send.php" method="POST">
+                    <form class="form verticalForm__form" action="ajax/send.php" method="POST">
                         <input class="verticalForm__input verticalForm__input-name"
                                type="text"
                                minlength="2"
@@ -652,6 +652,12 @@
         integrity="sha256-2XpjfLL5tRYLa3AAM0gz6aAY0zxvHogDzTWemxkTPDg="
         crossorigin="anonymous"></script>
 <script src="js/libs/jquery.maskedinput.min.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-sweetalert/1.0.1/sweetalert.min.css"
+      integrity="sha256-zuyRv+YsWwh1XR5tsrZ7VCfGqUmmPmqBjIvJgQWoSDo="
+      crossorigin="anonymous"/>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-sweetalert/1.0.1/sweetalert.min.js"
+        integrity="sha256-JirYRqbf+qzfqVtEE4GETyHlAbiCpC005yBTa4rj6xg="
+        crossorigin="anonymous"></script>
 <script src="js/built.js"></script>
 <script>
     new WOW().init();
